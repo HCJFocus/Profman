@@ -364,7 +364,7 @@ g{
 .order .instruction .instruction__item-one::before{
     content: "";
     position: absolute;
-    background-image: url(/img/call-center.svg);
+    background-image: url(.././img/call-center.svg);
     width: 60px;
     height: 60px;
     left: 317px;
@@ -403,7 +403,7 @@ g{
 .order .instruction .instruction__item-three::before{
     content: "";
     position: absolute;
-    background-image: url(/img/worker.svg);
+    background-image: url(.././img/worker.svg);
     width: 60px;
     height: 60px;
     right: 313px;
