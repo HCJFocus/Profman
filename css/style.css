@@ -223,10 +223,7 @@ introduce-item__name:first-child{
     align-items: center;
     justify-content: space-around;
     align-items: flex-start;
-    margin-bottom: 40px;
-    color: var(--black-color);
 }
-
 .services
 .services-roster
 .services-roster__top
@@ -237,6 +234,7 @@ introduce-item__name:first-child{
     line-height: 17px;
     text-decoration: none;
     text-align: center;
+    color: var(--blue-color);
 }
 .services
 .services-roster
@@ -248,7 +246,14 @@ introduce-item__name:first-child{
 .services-roster
 .services-roster__top
 .services-roster-top-item
-.services-name--active{
+.services-name{
+    color: var(--black-color);
+}
+.services
+.services-roster
+.services-roster__top
+.services-roster-top-item
+.services-name:hover{
     color: var(--orange-color);
 }
 .services
@@ -256,24 +261,23 @@ introduce-item__name:first-child{
 .services-roster-top-item a svg{
     border-right: 1px solid var(--grey-color-two);
     padding: 50px;
-}
-.services
-.services-roster
-.services-roster__top
-.services-roster-top-item svg:nth-child(3){
-    padding: 45px;
+    fill: var(--blue-color);
 }
 .services
 .services-roster
 .services-roster-top-item:nth-child(6) svg{
     border: none;
 }
+
 .services
 .services-roster
 .services-roster__top
 .services-roster-top-item
-g{
-    color: var(--blue-color);
+.services-image g{
+    fill: var(--blue-color);
+}
+.services-name--active{
+    color: var(--orange-color);
 }
 /*======BOTTOM======*/
 .services
@@ -285,17 +289,6 @@ g{
     align-items: flex-start;
 }
 .services
-.services-rosbot
-.services-roster__bot
-.services-roster-bot-item a{
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    line-height: 17px;
-    text-decoration: none;
-    text-align: center;
-}
-.services
 .services-roster
 .services-roster__bot
 .services-roster-bot-item a{
@@ -306,6 +299,26 @@ g{
     text-decoration: none;
     text-align: center;
     color: var(--blue-color);
+}
+.services
+.services-roster
+.services-roster__bot
+.services-roster-bot-item a:hover{
+    color: var(--orange-color);
+}
+.services
+.services-roster
+.services-roster__bot
+.services-roster-bot-item
+.services-name{
+    color: var(--black-color);
+}
+.services
+.services-roster
+.services-roster__bot
+.services-roster-bot-item
+.services-name:hover{
+    color: var(--orange-color);
 }
 .services
 .services-roster
@@ -326,14 +339,6 @@ g{
 .services-roster-bot-item
 .services-image g{
     fill: var(--blue-color);
-}
-
-.services
-.services-roster
-.services-roster__bot
-.services-roster-bot-item
-.services-name{
-    color: var(--black-color);
 }
 /*=====================================ORDER===========================================*/
 .order{
@@ -367,7 +372,7 @@ g{
 .order .instruction .instruction__item-one::before{
     content: "";
     position: absolute;
-    background-image: url(.././img/call-center.svg);
+    background-image: url(../././img/call-center.svg);
     width: 60px;
     height: 60px;
     left: 317px;
