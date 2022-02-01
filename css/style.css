@@ -923,6 +923,14 @@ introduce-item__name:first-child{
         justify-content: center;
     }
 }
+@media (max-width: 350px) {
+    .header-box__item:nth-child(2){
+        display: none;
+    }
+    .header-box{
+        justify-content: center;
+    }
+}
 @media (max-width: 320px) {
     .introduce
     .introduce-box
